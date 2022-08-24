@@ -20,12 +20,15 @@
 
     <form>
         
-        <label for="cliente">Escolha o cliente que quer Deletar</label>
+        <label for="cliente">Escolha o cliente que quer deletar</label>
         
-        <select name="cliente" ></select>
+        <select id="selectPesquisar" name="cliente" >
+            <option value="">Escolha o Cliente</option>
+        </select>
 
-        <button>Deletar</button>
+        <button id="deletar">Deletar</button>
     </form>
 
+    <script type="module" src="../js/deletar.js"></script>
 </body>
 </html>

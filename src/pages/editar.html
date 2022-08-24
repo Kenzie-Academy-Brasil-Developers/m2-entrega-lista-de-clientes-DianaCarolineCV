@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="../styles/styleBase.css">
     <title>Entrega Lista de Clientes</title>
 </head>
+
 <body>
     <header>
         <ul>
@@ -19,49 +21,53 @@
     </header>
 
     <form>
-        
-        <label for="cliente">Escolha o cliente que quer editar</label>
-        
-        <select name="cliente"></select>
 
-        <button>Buscar Cliente</button>
+        <label for="cliente">Escolha o cliente que quer editar</label>
+
+        <select id="selectPesquisar" name="cliente">
+            <option value="">Escolha o Cliente</option>
+        </select>
+
+        <button id="btnPesquisar">Buscar Cliente</button>
+        <span></span>
 
     </form>
-    
+
     <form>
         <h2>Editar cliente</h2>
 
         <h3>Dados pessoais</h3>
 
-        <input type="text" name="nome" placeholder="digite seu nome"/>
+        <input id="nome" type="text" name="nome" placeholder="digite seu nome" />
 
-        <input type="text" name="email" placeholder="digite sua email"/>
+        <input id="email" type="text" name="email" placeholder="digite sua email" />
 
-        <input type="number" name="idade" placeholder="digite sua idade"/>
+        <input id="numero" type="number" name="idade" placeholder="digite sua idade" />
 
-        <input type="text" name="cpf" placeholder="digite seu cpf"/>
+        <input id="cpf" type="text" name="cpf" placeholder="digite seu cpf" />
 
-        <input type="text" name="sexo" placeholder="digite seu sexo"/>
+        <input id="sexo" type="text" name="sexo" placeholder="digite seu sexo" />
 
 
         <h3>Endereço</h3>
 
-        <input type="number" name="cep" placeholder="digite seu cep"/>
-        
-        <input type="text" name="rua" placeholder="digite sua rua"/>
+        <input id="cep" type="number" name="cep" placeholder="digite seu cep" />
 
-        <input type="number" name="numero" placeholder="digite o numero"/>
+        <input id="rua" type="text" name="rua" placeholder="digite sua rua" />
 
-        <input type="text" name="bairro" placeholder="digite seu bairro"/>
+        <input id="numeroEndereco" type="number" name="numero" placeholder="digite o numero" />
 
-        <input type="text" name="cidade" placeholder="digite sua cidade"/>
+        <input id="bairro" type="text" name="bairro" placeholder="digite seu bairro" />
 
-        <input type="text" name="estado" placeholder="digite seu estado"/>
+        <input id="cidade" type="text" name="cidade" placeholder="digite sua cidade" />
+
+        <input id="estado" type="text" name="estado" placeholder="digite seu estado" />
 
 
-        <button>Atualizar Dados</button>
+        <button id="atualizar">Atualizar Dados</button>
     </form>
 
-
+    <script type="module" src="../js/editar.js"></script>
 </body>
+
 </html>
